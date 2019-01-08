@@ -176,7 +176,7 @@ export class CdkDrag<T = any> implements AfterViewInit, OnDestroy {
   private _pointerDirectionDelta: {x: -1 | 0 | 1, y: -1 | 0 | 1};
 
   /** Pointer position at which the last change in the delta occurred. */
-  private _pointerPositionAtLastDirectionChange: Point;
+  _pointerPositionAtLastDirectionChange: Point;
 
   /** Root element that will be dragged by the user. */
   private _rootElement: HTMLElement;
